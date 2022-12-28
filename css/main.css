@@ -1,0 +1,151 @@
+ul{
+    list-style: none;
+}
+ul li{
+    font-size: 20px;
+    background-color: #eee;
+    margin: 4px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+ul li a{
+    transition: 0.4s;
+    color: black;
+    display: block;
+    padding: 5px;
+}
+
+li.active{
+    background-color: orangered;
+}
+ul li:hover a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+ul li a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.fa-bars{
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width:768px){
+    .fa-bars{
+        display: block;
+    }
+    header nav ul.nav-hide{
+        display: none;
+    }
+}
+
+.nav-container{
+    height: 0px;
+    overflow: hidden;
+    transition: All 0.3s ease-out;
+}
+.nav-container ul {
+    margin-top: 10px;
+}
+.nav-container.show{
+    height: 200px;
+}
+
+.landing img{
+    width: 100%;
+}
+
+
+/* Specail */
+.special-items img{
+    width: 100%;
+}
+
+.navbar.special-items{
+  gap: 10px;
+  text-align: center;
+}
+@media(max-width:500px){
+    .navbar.special-items{
+        flex-direction: column;
+    }
+}
+.Special-item{
+    padding: 2px;
+    background-color: black;
+    color: white;
+}
+
+.heading{
+    text-align: center;
+    margin: 20px auto;
+    position: relative;
+}
+.heading::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: black;
+    width: 130px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+img{
+    width: 100%;
+}
+.product-items .product-item{
+    padding: 10px;
+    background-color: white;
+}
+@media(max-width:500px){
+    .product-items{
+        flex-direction: column;
+    }
+}
+.product-items .product-item ul li{
+    background-color: white;
+}
+.product-items .product-item .fa-star{
+    color: yellow;
+}
+
+.product-items .product-item .item-image{
+   position: relative;
+}
+
+.contact form{
+    padding: 10px;
+    background-color: #eee;
+}
+.contact{
+    margin-bottom: 20px;
+}
+
+form input{
+    display: block;
+    border: 0;
+    outline: 0;
+    background-color: white;
+    font-size: 22px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 7px;
+}
+
+form .data input{
+    display: inline-block;
+    width: 49%;
+}
+.data{
+    display: flex;
+    justify-content: space-between;
+}
